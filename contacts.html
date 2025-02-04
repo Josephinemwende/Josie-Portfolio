@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in touch</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="goBack" onclick="goBackHome()">
+            <p>Go back</p>
+            <img src="./Images/arrow.svg" alt="arrow-svg">
+        </div>
+        <h1>Get in touch</h1>
+        <hr>
+        <div class="Contacts">
+            <form>
+                <label for="name">Enter your name</label>
+                <input type="text" name="name" id="name" placeholder="Josephine mwenswa" required>
+                <label for="email">Enter your email</label>
+                <input type="email" name="email" id="email" placeholder="josephine@gmail.com" required>
+                <label for="message">Message</label>
+                <textarea rows="5" cols="30" placeholder="what's your message ..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="contact-details">
+                <div class="contact-primarly-details">
+                    <img src="./Images/whatsapp.png" alt="whatsapp icon">
+                    <div>
+                        <h3>Whatsapp</h3>
+                        <span>+254 719263661</span>
+                    </div>
+                </div>
+                <div class="contact-primarly-details">
+                    <img src="./Images/gmail.png" alt="gmail logo">
+                    <div>
+                        <h3>Email</h3>
+                        <span>josephine.mwenswa@gmail.com</span>
+                    </div>
+                </div>
+                <div class="contact-primarly-details">
+                    <img src="./Images/phone-call.png" alt="phone-call logo">
+                    <div>
+                        <h3>Phone number</h3>
+                        <span>+254 719263661</span>
+                    </div>
+                </div>
+                <div class="contact-primarly-details">
+                    <img src="./Images/placeholder.png" alt="address icon">
+                    <div>
+                        <h3>Address</h3>
+                        <span>Nairobi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

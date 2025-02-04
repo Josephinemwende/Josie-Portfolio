@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwenswa's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <nav>
+            <li><a href="/" target="_self">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><button onclick="handleClick()">Contact me</button></li>
+        </nav>
+        <div>
+            <h1>Hey there!</h1>
+            <h1>I'm Josephine Mwenswa.</h1>
+            <h1>Junior Software Engineer</h1>
+        </div>
+        <button onclick="handleDownloadCV()">Download CV</button>
+    </header>
+    <section id="About">
+        <div class="about-image">
+            <img src="./Images/about-section-image.png" alt="about-section-image">
+        </div>
+        <div class="about-me">
+            <hr>
+            <h1>About me</h1>
+            <p>
+                A passionate junior software engineer with a strong foundation in <span>JavaScript</span>,
+                <span>Python</span> and <span>Web development</span>. I thrive in solving complex problems and turning
+                ideas into functional user-friendly websites.
+            </p>
+            <p>
+                I am constantly looking for opportunities to learn new tools and technologies and refine my craft.
+            </p>
+            <p>Feel free to explore my portfolio to see some of my work, or reach out if you would like to connect.</p>
+            <div class="buttons">
+                <button id="skills-button" onclick="handleSkillsButton()">Skills</button>
+                <button onclick="handleProjectsButton()">Projects</button>
+            </div>
+            <hr class="second-hr">
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills-Set</h1>
+        <hr>
+        <section class="skills-set">
+            <div>
+                <img src="./Images/github-icon.png" alt="github-icon">
+                <h2>Git Version Control</h2>
+                <p>I'm proficient in using Git for version control enabling efficient collaboration and code management
+                    in team environment.
+                </p>
+                <p>
+                    My experience includes creating and managing repositories, branching, merging and conflict resolutions.
+                </p>
+                <img src="./Images/github.png" alt="icon-github">
+                <img src="./Images/git.png" alt="icon-git">
+            </div>
+            <div>
+                <img src="./Images/web icon.png" alt="web development">
+                <h2>Web Development</h2>
+                <p>I specialize in creating modern responsive, user-friendly websites using HTML, CSS and JavaScript.
+                </p>
+                <p> I have experience with front-end frameworks like React, as well as back-end development technologies 
+                    such as Node.js and Express as well as Django.
+                </p>
+                <img src="./Images/html (1).png" alt="html-icon">
+                <img src="./Images/css-3 (2).png" alt="css-3-icon">
+                <img src="./Images/JavaScript-icon.png" alt="javascript-icon">
+                <img src="./Images/node.js -icon.png" alt="node.js-icon">
+                <img src="./Images/react (2).png" alt="react-icon">
+            </div>
+            <div>
+                <img src="./Images/web-design-icon.png" alt="ui/ux-icon">
+                <h2>UI/UX Design</h2>
+                <p>I craft visually appealing and user-centrist web designs that balance aesthetics with functionality. I use tools like Figma.</p>
+                <p>
+                    I am proficient in translating designs into clean semantic HTML and CSS codes.
+                </p>
+                <img src="./Images/figma-icon.png" alt="figma-icon">
+            </div>
+        </section>
+    </section>
+    <section class="contact-me">
+        <h1>Interested in working together?</h1>
+        <hr>
+        <button onclick="handleClick()">Contact me</button>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <div>
+            <img src="./Images/gmail-logo.png" onclick="handleGmail()" alt="gmail-logo">
+            <img onclick="handleGithub()" src="./Images/icons8-github-50 (1).png" alt="github-logo-icon">
+            <img onclick="handleLinkedIn()" src="./Images/icons8-linkedin-50.png" alt="linkedin-icon">
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
