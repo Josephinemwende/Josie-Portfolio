@@ -95,3 +95,16 @@ footer div{
     display: flex;
     gap: 20px;
 }
+@media only screen and (max-width: 600px){
+    nav{
+        display: none;
+    }
+    .project1, .project2{
+        display: flex;
+        flex-direction: column;
+        padding:0 100px;
+    }
+    .project1 div{
+        width: 100%;
+    }
+}

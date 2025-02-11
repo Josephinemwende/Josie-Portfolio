@@ -43,6 +43,9 @@ nav button{
     font-family: 'Roboto Serif', sans-serif;
     font-weight: 500;
 }
+#menu-icon{
+    display: none;
+}
 header div{
     margin-top: 220px;
     margin-bottom: 50px;
@@ -205,4 +208,130 @@ footer img{
 footer div{
     display: flex;
     gap: 20px;
+}
+/* media  queries for screens with a max-width of 600px */
+@media only screen and (max-width: 600px) {
+    nav{
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    header{
+        margin: 0;
+        height: 650px;
+        padding: 50px;
+        position: relative;
+    }
+    #menu-icon{
+        display: block;
+        position: absolute;
+        right: 0;
+        top:0;
+        padding: 0 25px;
+    }
+    header div{
+        margin: 0;
+        font-size: 24px;
+        line-height: 65px;
+        text-align: center;
+    }
+    header button{
+        margin: 20px auto;
+        width: 100%;
+    }
+    #About{
+        margin: 0;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    #About img{
+        width: 100%;
+    }
+    #skills{
+        margin: 0;
+        padding: 50px;
+    }
+    .skills-set{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-me{
+        margin:0;
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-me button{
+        margin: 20px 50px;
+        width: 100%;
+    }
+    .contact-me h1{
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-me hr{
+        display: none;
+    }
+    footer{
+        padding: 10px 50px;
+        margin: 0;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer img{
+        width: 30px;
+        height: 30px;
+        gap: 5px;
+    }
+}
+
+/*media queries for screens with a min-width of 600px and max-width of 900px */
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+   nav{
+    display: none;
+   }
+   header{
+    position: relative;
+    padding: 50px;
+   }
+   header div{
+    margin: 50px 0;
+    padding-top: 20px;
+    text-align: center;
+   }
+   header button{
+    margin: 20px auto;
+    width: 100%;
+}
+    #menu-icon{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 50px;
+   }
+   #About{
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#About img{
+    width: 100%;
+}
+#skills{
+    margin: 0;
+    padding: 50px;
+}
+.skills-set{
+    display: flex;
+    flex-direction: column;
+}
 }
