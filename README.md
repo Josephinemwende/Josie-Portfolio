@@ -4,6 +4,8 @@ This is a personal portfolio website showcasing my projects and skills. It serve
 
 ## Features
 
-. Responsive design for various screen sizes
-. Project showcase with detailed descriptions and the skills used
-. Contact form
+<ul>
+    <li>Responsive design for various screen sizes</li>
+    <li>Project showcase with detailed desciptions and the skills used</li>
+    <li>Contact form</li>
+</ul>
