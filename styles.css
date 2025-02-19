@@ -16,14 +16,25 @@ header{
     position: relative;
 }
 nav{
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(166, 61, 23, 75%);
+    width: 100%;
     position: fixed;
+    text-align: right;
     right: 0;
     top: 0;
-    padding: 10px 100px;
-    background-color:#A63D17;
-    width: 100%;
+    padding: 0 100px;
     margin-top: 0;
+}
+nav img{
+    border: 2px solid #F2F2F2;
+    padding: 0;
+    height: 100px;
+    width: 100px;
+}
+nav ul{
+    margin-top: 20px;
 }
 nav li{
     display: inline;
@@ -43,7 +54,7 @@ nav button{
     font-family: 'Roboto Serif', sans-serif;
     font-weight: 500;
 }
-#menu-icon{
+#mobile-nav{
     display: none;
 }
 header div{
@@ -219,19 +230,22 @@ footer div{
     header{
         margin: 0;
         height: 650px;
-        padding: 50px;
-        position: relative;
+        padding: 0 50px;
     }
-    #menu-icon{
-        display: block;
-        position: absolute;
-        right: 0;
-        top:0;
-        padding: 0 25px;
+    #mobile-nav{
+        display: flex;
+        justify-content: space-around;
+
+    }
+    #mobile-nav img[src="./Images/mwenswa-logo.png"]{
+        border: 1px solid #F2F2F2;
+    }
+    #mobile-nav img[src="./Images/menu (1).svg"]{
+        margin: 20px 0;
     }
     header div{
         margin: 0;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 65px;
         text-align: center;
     }
